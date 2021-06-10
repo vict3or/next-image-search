@@ -68,7 +68,8 @@ function ImageDisplay() {
           }
         })}
 
-        <h3>{loading && 'Loading...'}</h3>
+        <div>{loading && 'Loading...'}</div>
+        <div>{error && 'Error'}</div>
       </div>
     </div>
   )
