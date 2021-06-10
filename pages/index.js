@@ -1,6 +1,5 @@
 import ImageDisplay from "../components/ImageDisplay";
 import Nav from "../components/Navbar";
-import Footer from "../components/Footer"
 
 
 function App() {
