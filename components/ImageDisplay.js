@@ -1,5 +1,5 @@
 import { useRef, useState, useCallback } from "react"
-import getApi from '../lib/api.js'
+import getApi from '../pages/api/api.js'
 
 function ImageDisplay() {
   const [query, setQuery] = useState('')
