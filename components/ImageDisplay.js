@@ -14,6 +14,7 @@ function ImageDisplay() {
 
 
   const observer = useRef()
+
   const lastImageElementRef = useCallback(node => {
     if(loading){
       return
@@ -44,7 +45,6 @@ function ImageDisplay() {
       </div>
 
       <div className="main">
-
         {images.map((image, index) => {
           if (images.length === index + 1) {
             return (
@@ -69,6 +69,7 @@ function ImageDisplay() {
         })}
 
         <div>{loading && 'Loading...'}</div>
+
         <div>{error && 'Error'}</div>
       </div>
     </div>
