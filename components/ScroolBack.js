@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { MdKeyboardArrowUp } from 'react-icons/md'
-
+import { FaChevronCircleUp } from 'react-icons/fa'
+import { IconContext } from 'react-icons'
 
 function ScroolBack() {
   const [isUp, setIsUp] = useState(false)
@@ -21,12 +21,14 @@ function ScroolBack() {
   return (
     <>
       {isUp &&
-
-        <MdKeyboardArrowUp
-          onClick={() => window.scroll({ top: 0, left: 0, behavior: 'smooth' })}
-          className="md-24  scroolButton"
-          title="Go to top"
-        />
+        <IconContext.Provider value={{ color: "#2c2e44", size: '2.5rem', title: 'go to the top of the page'}}>
+          <div
+            className="scroolButton"
+            onClick={() => window.scroll({ top: 0, left: 0, behavior: 'smooth' })}
+          >
+            <FaChevronCircleUp />
+          </div>
+        </IconContext.Provider>
       }
     </>
   )
