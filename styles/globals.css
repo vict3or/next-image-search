@@ -137,6 +137,7 @@ code {
 }
 
 .scroolButton {
+  -webkit-tap-highlight-color: transparent;
   position: fixed; 
   bottom: 1.25rem;
   right: 1.875rem; 
